@@ -1,0 +1,11 @@
+.container{
+    margin:5rem auto;
+}
+
+
+.grid{
+    border:2px solid black;
+    width:35.7rem;
+    height:36.6rem;
+    text-align: left;
+}

@@ -1,0 +1,16 @@
+.blockLit{
+    border:1px solid black;
+    width: 7rem;
+    height:7rem;
+    background-color: rgb(20, 186, 228);
+    display: inline-block;
+}
+
+.blockNotLit
+{
+    border:1px solid black;
+    width: 7rem;
+    height:7rem;
+    background-color: darkblue;
+    display: inline-block;
+}
