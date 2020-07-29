@@ -2,8 +2,14 @@
     border:1px solid black;
     width: 7rem;
     height:7rem;
-    background-color: rgb(20, 186, 228);
+    background-color:#00bcd4;
     display: inline-block;
+    margin:0;
+    font-size: 0;
+    vertical-align: top;
+    -webkit-text-size-adjust:none;
+    letter-spacing: 0;
+    transition: background-color 1s ease;
 }
 
 .blockNotLit
@@ -11,6 +17,12 @@
     border:1px solid black;
     width: 7rem;
     height:7rem;
-    background-color: darkblue;
+    background-color:#263238;
     display: inline-block;
+    margin:0;
+    font-size: 0;
+    -webkit-text-size-adjust:none;
+    letter-spacing: 0;
+    vertical-align: top;
+    transition: background-color 1s ease;
 }

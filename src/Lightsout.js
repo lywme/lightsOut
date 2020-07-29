@@ -21,6 +21,7 @@ class Lightsout extends Component{
             for(let j=0;j<this.props.num;j++)
             {
                 matrix[i][j]=Math.floor(Math.random()*2);
+                //matrix[i][j]=Math.random()<0.25?1:0;
             }
         }
 
@@ -114,12 +115,13 @@ class Lightsout extends Component{
         }
         
         return (
-            <div className="container">
+            <div class="container">
+                <span className="neon-orange">Lights</span>
+                <span className="neon-blue">Out</span>
                 {!this.isWin()?
-                <div className="grid">
+                <div><div className="grid">
                     {matrix}
-                    <p>Number of tries: {this.state.tryTimes}</p>
-                </div>:<div><p>You win with {this.state.tryTimes} tries !!!</p><button onClick={()=>window.location.reload()}>Play again.</button></div>
+                </div><p className="neon-info">Number of tries: {this.state.tryTimes}</p><button onClick={()=>window.location.reload()}>Reset game.</button></div>:<div><p className="neon-info">You win with {this.state.tryTimes} tries !!!</p><button onClick={()=>window.location.reload()}>Play again.</button></div>
                 }
             </div>
         );

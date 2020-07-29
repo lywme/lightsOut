@@ -5,7 +5,9 @@ import Lightsout from './Lightsout';
 function App() {
   return (
     <div className="App">
-      <Lightsout num={5} />
+      <div className="Lightsout">
+        <Lightsout num={5} />
+      </div>
     </div>
   );
 }
